@@ -23,7 +23,13 @@ body {
     -ms-user-select: none; /* For IE/Edge */
     background: linear-gradient(180deg, #0e161cd6, #06171e) !important;
 }
-
+.emoji-wrapper {
+    display: inline-block;
+    width: 30px;  
+    height: 30px;
+    font-size: 2em;
+    text-align: center; /* Center emoji inside the block */
+}
   .cv-section2 {
     position: absolute;
     left: 52%;
@@ -266,13 +272,14 @@ div#se {
   padding: 0px;
 
 }
+
 }
 
 @media (max-width: 768px) {
     .header h1 {
         font-size: 24px;
     }
-  
+
 
   .cv-section ul {
     width: -webkit-fill-available;
@@ -321,7 +328,8 @@ div#se {
   <div className="cv-section">
                 <h4>Personal</h4>
                 <ul className="ul2">
-                  <div id="se">🖂<p id="specialElement">hliasgianno2@gmail.com</p></div>
+                  <div id="se"><span class="emoji-wrapper">🖂</span>
+<p id="specialElement">hliasgianno2@gmail.com</p></div>
                   <i className="fa fa-linkedin-square"> <a href="https://www.linkedin.com/in/ilias-giannopoylos-0a5707328/" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                     ILIAS GIANNOPOYLOS</a></i> 
                   <div>📍 Athens, Greece</div>
